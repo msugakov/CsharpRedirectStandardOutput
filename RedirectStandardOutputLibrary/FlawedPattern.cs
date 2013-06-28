@@ -47,7 +47,7 @@ namespace RedirectStandardOutputLibrary
 
                 process.Start();
 
-                //Thread.Sleep(100);
+                // Thread.Sleep(100); uncomment this line
 
                 process.BeginOutputReadLine();
                 process.BeginErrorReadLine();

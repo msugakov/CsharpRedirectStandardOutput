@@ -13,7 +13,7 @@ namespace RedirectStandardOutputLibrary.Tests
         private const int Runs = 1000;
 
         [Fact]
-        public void TestItBreaks()
+        public void TestItBreaks_ShouldFail()
         {
             for (int i = 0; i < Runs; ++i)
             {
@@ -34,6 +34,27 @@ namespace RedirectStandardOutputLibrary.Tests
 
                 Assert.Equal(string.Empty, standardError);
             }
+        }
+
+        [Fact]
+        public void TestNoEolWriter()
+        {
+            string testString = Guid.NewGuid().ToString();
+
+            string standardOutput, standardError;
+
+            int returnCode = FlawedPattern.ExecuteProcess(
+                "NoEolWriter.exe",
+                testString,
+                DefaultTimeout,
+                out standardOutput,
+                out standardError);
+
+            Assert.Equal(0, returnCode);
+
+            Assert.Equal(testString, standardOutput.Trim());
+
+            Assert.Equal(string.Empty, standardError);
         }
     }
 }

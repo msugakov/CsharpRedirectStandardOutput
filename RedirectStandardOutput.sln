@@ -12,6 +12,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{2FDE5E
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoEolWriter", "NoEolWriter\NoEolWriter.csproj", "{187A8B18-3C23-4D98-831B-820A4FEF5DC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongWaiter", "LongWaiter\LongWaiter.csproj", "{AA1937A8-327E-4203-BF46-9CA3F2AFF4D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +30,14 @@ Global
 		{A20FED1F-FCC6-44B8-9927-6DCE33602095}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A20FED1F-FCC6-44B8-9927-6DCE33602095}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A20FED1F-FCC6-44B8-9927-6DCE33602095}.Release|Any CPU.Build.0 = Release|Any CPU
+		{187A8B18-3C23-4D98-831B-820A4FEF5DC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{187A8B18-3C23-4D98-831B-820A4FEF5DC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{187A8B18-3C23-4D98-831B-820A4FEF5DC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{187A8B18-3C23-4D98-831B-820A4FEF5DC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA1937A8-327E-4203-BF46-9CA3F2AFF4D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA1937A8-327E-4203-BF46-9CA3F2AFF4D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA1937A8-327E-4203-BF46-9CA3F2AFF4D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA1937A8-327E-4203-BF46-9CA3F2AFF4D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
